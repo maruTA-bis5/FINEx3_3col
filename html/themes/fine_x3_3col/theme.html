@@ -29,38 +29,74 @@
 </nav>
 
 <div id="left_box">
+<{if $xoops_lblocks}>
+<{foreach item=block from=$xoops_lblocks}>
 <section>
-<h3>html5のテンプレート</h3>
-html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります
+<h3><{$block.title}></h3>
+<{$block.content}>
 </section>
+<{/foreach}>
+<{/if}>
 
 </div><!--left_box-->
 
 <div id="main">
 
+<{if $xoops_ccblocks}>
+<{foreach item=block from=$xoops_ccblocks}>
+<{if $block.weight == 0}>
 <section>
-<h3>html5のテンプレート</h3>
-html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります
+<h3><{$block.title}></h3>
+<{$block.content}>
 </section>
+<{/if}>
+<{/foreach}>
+<{/if}>
 
 <section>
-<h3>html5のテンプレート</h3>
-html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります
-
+<{$xoops_content}>
 </section>
 
+<{if $xoops_ccblocks}>
+<{foreach item=block from=$xoops_ccblocks}>
+<{if $block.weight > 0}>
 <section>
-<h3>html5のテンプレート</h3>
-html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります
+<h3><{$block.title}></h3>
+<{$block.content}>
 </section>
+<{/if}>
+<{/foreach}>
+<{/if}>
+
+<{if $xoops_clblocks}>
+<{foreach item=block from=$xoops_clblocks}>
+<section>
+<h3><{$block.title}></h3>
+<{$block.content}>
+</section>
+<{/foreach}>
+<{/if}>
+
+<{if $xoops_crblocks}>
+<{foreach item=block from=$xoops_crblocks}>
+<section>
+<h3><{$block.title}></h3>
+<{$block.content}>
+</section>
+<{/foreach}>
+<{/if}>
 
 </div><!--main-->
 
 <div id="right_box">
+<{if $xoops_rblocks}>
+<{foreach item=block from=$xoops_rblocks}>
 <section>
-<h3>html5のテンプレート</h3>
-html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります。html5のテンプレートサンプルになります
+<h3><{$block.title}></h3>
+<{$block.content}>
 </section>
+<{/foreach}>
+<{/if}>
 </div><!--right_box-->
 
 <footer>
