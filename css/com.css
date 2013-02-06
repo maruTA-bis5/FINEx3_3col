@@ -1,0 +1,114 @@
+@charset "utf-8";
+h1 {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-shadow: #333 2px 2px 2px;
+}
+h2 {
+  width: 234px; /*ロゴの横幅*/
+  height: 43px; /*ロゴの高さ*/
+  text-indent: -9999px;
+  background: url(../images/logo.gif) no-repeat;
+}
+h2 a {
+  display: block;
+  height: 43px; /*ロゴの高さ*/
+}
+h3 {
+  font-size: 16px;
+}
+a {
+  color: #333;
+}
+a:hover {
+  color: #999;
+}
+#wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+header {
+  background: #666;
+  color: #fff;
+  padding: 10px 20px;
+  -moz-border-radius: 0 0  5px 5px;
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
+}
+nav {
+  margin-top: 20px;
+  background: #eee;
+  padding: 10px;
+  font-weight: bold;
+  border: solid 1px #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;	/* モダンブラウザ向け */
+  zoom: 1; /* IE向け */
+}
+nav li {
+  margin: 0 10px;
+  list-style: none;
+  float: left;
+}
+#main,#right_box,#left_box {
+  float: left;
+}
+#main {
+  margin: 0 20px;
+  width: 520px;
+}
+#left_box,#right_box {
+  width: 200px;
+}
+section {
+  margin: 20px 0;
+  padding-bottom: 10px;
+  border-bottom: dotted 1px #ccc;
+}
+section:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+}
+footer {
+  position: relative;
+  clear: left;
+  margin: 30px 0;
+  background: #eee;
+  padding: 10px;
+  border: solid 1px #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+img.f_left {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+img.f_right {
+  float: right;
+  margin: 0 0 5px 5px;
+}
+#pagetop {
+  display: inline-block;
+  position: absolute;
+  top: -33px; /*数値は画像の高さ＋1px*/
+  right: 10px;
+}
+#copyright {
+  text-align: center;
+}
